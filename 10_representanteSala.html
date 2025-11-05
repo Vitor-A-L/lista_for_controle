@@ -1,18 +1,26 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    /*
+  /*
     PROBLEMA: REPRESENTANTE DE SALA
     Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
     Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
-    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o 
+    quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
     */
 
-    //ENTRADA
+  //ENTRADA
+  let cand01 = Number(prompt("Fale o nome do canditato 01"));
+  let cand02 = Number(prompt("Fale o nome do canditato 02"));
+  let cand03 = Number(prompt("Fale o nome do canditato 03"));
+  let votantes = Number(prompt("Infroeme a quantidade de alunos votantes"));
+  let voto01 = 0;
+  let voto02 = 0;
+  let voto03 = 0;
+  //PROCESSAMENTO
+  for (let i = 1; i <= votantes; i++) {
+    const voto = Number(prompt(`Informe o seu voto: \n1-${cand01} \n2-${cand02} \n3${cand03}`))
 
+  }
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  //SAÍDA
 </script>
