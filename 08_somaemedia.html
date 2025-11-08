@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-
+let num = 5
+let soma = 0
 
     //PROCESSAMENTO
-
-
+for(i = 1; i<=num;i++){
+    let total = Number(prompt(`Escreva o ${i} numero`))
+    soma += total
+}
+let div = soma / num;
     //SAÍDA
-
+document.write(`A soma será igual a ${soma} <br>`);
+document.write(`A divisão será de ${div}`);
 </script>

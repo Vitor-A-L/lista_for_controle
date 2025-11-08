@@ -10,11 +10,17 @@
     */
 
     //ENTRADA
-
+let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
     
     //PROCESSAMENTO
-
-    
+let unic = [];
+    for(let i = 0; i <listaDeLetras.length; i++){
+        let letra = listaDeLetras[i].toLowerCase();
+        let posicao = listaDeLetras.indexOf(letra)
+        if(posicao == -1){
+            unic.push(letra);
+        }
+    }
     //SAÍDA
-
+document.write(`As letras que n repetem são ${unic.sort().join(" , ")}`);
 </script>

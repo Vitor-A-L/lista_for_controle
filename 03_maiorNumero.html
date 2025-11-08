@@ -7,15 +7,16 @@
     */
 
   //ENTRADA
-  let number01 = Number(prompt(`Escreva o num01`));
-  let number02 = Number(prompt(`Escreva o num02`));
-  let number03 = Number(prompt(`Escreva o num03`));
-  let number04 = Number(prompt(`Escreva o num04`));
-  let number05 = Number(prompt(`Escreva o num05`));
-
+let num = 5
+let i = 0
   //PROCESSAMENTO
-for(let i = 0; i <= number01; i++){
-
+for(let ii = 1;ii<= 5;ii++){
+let iii = Number(prompt(`Escreva o ${ii} número`));
+if(i<iii){
+  i=iii
 }
+}
+document.write(`O valor mais alto informado pelo usúario foi ${i}`);
+
   //SAÍDA
 </script>

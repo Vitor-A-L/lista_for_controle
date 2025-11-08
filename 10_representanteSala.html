@@ -9,18 +9,34 @@
     */
 
   //ENTRADA
-  let cand01 = Number(prompt("Fale o nome do canditato 01"));
-  let cand02 = Number(prompt("Fale o nome do canditato 02"));
-  let cand03 = Number(prompt("Fale o nome do canditato 03"));
+  let cand01 = prompt("Fale o nome do candidato 01");
+  let cand02 = prompt("Fale o nome do candidato 02");
+  let cand03 = prompt("Fale o nome do candidato 03");
   let votantes = Number(prompt("Infroeme a quantidade de alunos votantes"));
   let voto01 = 0;
   let voto02 = 0;
   let voto03 = 0;
   //PROCESSAMENTO
   for (let i = 1; i <= votantes; i++) {
-    const voto = Number(prompt(`Informe o seu voto: \n1-${cand01} \n2-${cand02} \n3${cand03}`))
-
+    const voto = Number(prompt(`Informe o seu voto: \n1- ${cand01} \n2- ${cand02} \n3- ${cand03}`));
+    if (voto == 1) {
+      voto01 = voto01 + 1;
+    } else if (voto === 2) {
+      voto02 = voto02;
+    } else {
+      voto03 = voto03 + 1;
+    }
   }
-
   //SAÍDA
+  document.write(`O candidato ${cand01} recebeu ${voto01} de votos
+  ${voto01/votantes*100}% <br>`);
+  document.write(`O candidato ${cand02} recebeu ${voto02} de votos ${voto/votantes*100}%`);
+  document.write(`O candidato ${cand03} recebeu ${voto03} de votos ${voto/votantes*100}%`);
+  if(voto01 > voto02 && voto01 > voto03){
+    document.write(`O candidato ${cand01} ganhou`);
+  }else if(voto02 > voto01&& voto02> voto03){
+    document.write(`O candidato ${cand02} ganhou`);
+  }else{
+    document.write(`O candidato ${cand03} ganhou`)
+  }
 </script>
